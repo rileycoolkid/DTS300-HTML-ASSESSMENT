@@ -33,6 +33,22 @@ body{
 .hero h2{max-width:650px;margin:.25rem 0 .75rem;font-size:clamp(2rem,5vw,3.4rem);line-height:1.1}
 .hero p:last-child{max-width:650px;font-size:1.1rem}
 
+.page-heading{margin-bottom:1rem}
+.page-heading h2{margin:.25rem 0 .5rem;font-size:2.4rem;line-height:1.1}
+.page-heading p:last-child{margin-top:0}
+.contact-layout{display:grid;grid-template-columns:1fr 1.5fr;gap:1rem}
+.contact-details,.contact-form{background:#fff;padding:1.5rem;border-radius:6px}
+.contact-details h3{margin-top:0}
+.contact-details address{font-style:normal}
+.contact-details address p{margin:1rem 0}
+.contact-details a{color:var(--accent)}
+.form-row{display:flex;flex-direction:column;margin-bottom:1rem}
+.form-row label{font-weight:bold;margin-bottom:.35rem}
+.form-row input,.form-row textarea{border:1px solid #cbd5da;border-radius:4px;padding:.7rem;font:inherit;color:var(--text)}
+.form-row input:focus,.form-row textarea:focus{outline:2px solid var(--accent-light);border-color:var(--accent)}
+.contact-form button{border:0;border-radius:4px;padding:.7rem 1rem;background:var(--accent);color:#fff;font:inherit;font-weight:bold;cursor:pointer}
+.contact-form button:hover{background:#284861}
+
 .content{display:grid;grid-template-columns:2fr 1fr;gap:1rem;margin-bottom:1rem}
 .content article{background:#fff;padding:1rem;border-radius:6px}
 .sidebar{background:#fff;padding:1rem;border-radius:6px}
@@ -51,5 +67,7 @@ body{
 @media (max-width:700px){
 	.content{grid-template-columns:1fr}
 	.hero{padding:1.5rem}
+	.contact-layout{grid-template-columns:1fr}
+	.page-heading h2{font-size:2rem}
 	.site-header .container{flex-direction:column;gap:.5rem}
 }
